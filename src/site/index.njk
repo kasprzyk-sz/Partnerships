@@ -33,7 +33,7 @@ templateEngineOverride: njk, md
 </section>
 <section class="embl-grid embl-grid--has-centered-content">
     <div>
-<h2 class="vf-summary__title">News from our partners</h2>    
+<h2 class="vf-text vf-text-heading--3">News from our partners</h2>    
 </div>
     <div>
         <link rel="import"
@@ -44,9 +44,11 @@ templateEngineOverride: njk, md
 </section>
 <section class="embl-grid embl-grid--has-centered-content">
     <div>
-        <h2 class="vf-summary__title">Jobs at partner institutions</h2>
+        <h2 class="vf-text vf-text-heading--3">Jobs at partner institutions</h2>
     </div>
-    <div>
-    Jobs list HERE
-    </div>
+  <div>
+    <link rel="import"
+      href="https://dev.content.embl.org/api/v1/pattern.html?pattern=vf-jobs-snippet&filter-content-type=jobs&filter-field-contains[field_jobs_description]=Cancer&filter-field-date-after[field_jobs_expiration]=today&limit=3"
+      data-target="self" data-embl-js-content-hub-loader>
+  </div>
 </section>
